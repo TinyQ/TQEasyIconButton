@@ -19,7 +19,7 @@ TQEasyIconButton is a UIButton Category. Easy way to set `titleEdgeInsets`,`imag
 
 2. Set icon left,title right
 
-![image](img/left.png) 
+	![image](img/left.png) 
 
 
 	```objective-c
@@ -30,7 +30,7 @@ TQEasyIconButton is a UIButton Category. Easy way to set `titleEdgeInsets`,`imag
 
 	```
 
-![image](img/right.png)
+	![image](img/right.png)
 
 	```objective-c
 
@@ -40,7 +40,7 @@ TQEasyIconButton is a UIButton Category. Easy way to set `titleEdgeInsets`,`imag
 
 	```
 
-![image](img/bottom.png)
+	![image](img/bottom.png)
 
 	```objective-c
 
@@ -50,7 +50,7 @@ TQEasyIconButton is a UIButton Category. Easy way to set `titleEdgeInsets`,`imag
 	
 	```
 
-![image](img/top.png)
+	![image](img/top.png)
 
 	```objective-c
 	
