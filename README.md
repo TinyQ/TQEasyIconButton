@@ -8,46 +8,58 @@ TQEasyIconButton is a UIButton Category. Easy way to set `titleEdgeInsets`,`imag
 
 ##Usage
 
-![image](img/left.png) ![image](img/right.png)
+1. Set icon & title for button.
 
-![image](img/bottom.png) ![image](img/top.png)
-
-
-```objective-c
+	```objective-c
 
 	[self.demoButton setTitle:@"Button" forState:UIControlStateNormal];
 	[self.demoButton setImage:@"icon" forState:UIControlStateNormal];
 
-```
+	```
 
-```objective-c    
+2. Set icon left,title right
 
-	- (IBAction)left:(id)sender
-    {
-        [self.demoButton setIconInLeft];
-        // or
-        //[self.demoButton setIconInLeftWithSpacing:0];
-    }
+![image](img/left.png) 
 
-    - (IBAction)right:(id)sender
-    {
-        [self.demoButton setIconInRight];
-        // or
-        //[self.demoButton setIconInRightWithSpacing:0];
-    }
 
-    - (IBAction)top:(id)sender
-    {
-        [self.demoButton setIconInTop];
-        // or
-        //[self.demoButton setIconInTopWithSpacing:0];
-    }
+	```objective-c
 
-    - (IBAction)bottom:(id)sender
-    {
-        [self.demoButton setIconInBottom];
-        // or
-        //[self.demoButton setIconInBottomWithSpacing:0];
-    }
+	[self.demoButton setIconInLeft];
+	// or
+	//[self.demoButton setIconInLeftWithSpacing:0];
 
-```  
+	```
+
+![image](img/right.png)
+
+	```objective-c
+
+	[self.demoButton setIconInRight];
+	// or
+	//[self.demoButton setIconInRightWithSpacing:0];
+
+	```
+
+![image](img/bottom.png)
+
+	```objective-c
+
+	[self.demoButton setIconInBottom];
+	// or
+	//[self.demoButton setIconInBottomWithSpacing:0];
+	
+	```
+
+![image](img/top.png)
+
+	```objective-c
+	
+	[self.demoButton setIconInBottom];
+	// or
+	//[self.demoButton setIconInBottomWithSpacing:0];
+
+	```
+
+
+
+  
