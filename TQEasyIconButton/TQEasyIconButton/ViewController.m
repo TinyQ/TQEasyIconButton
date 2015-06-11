@@ -20,6 +20,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.demoButton setTitle:@"Button" forState:UIControlStateNormal];
+    [self.demoButton setImage:@"icon" forState:UIControlStateNormal];
 }
 
 - (IBAction)left:(id)sender
