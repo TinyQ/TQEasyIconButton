@@ -7,8 +7,48 @@
 //
 
 #import "UIButton+TQEasyIcon.h"
+#import <objc/runtime.h>
+
+@implementation TQEasyIconInfo
+
+- (instancetype)initWithSpacing:(CGFloat)spacing iconDirection:(TQEasyIconDirection)direction
+{
+    self = [super init];
+    if (self) {
+        self.iconWithTitleSpacing = spacing;
+        self.iconDirection        = direction;
+    }
+    return self;
+}
+
+@end
 
 @implementation UIButton (TQEasyIcon)
+
+#pragma mark - icon direction property
+
+@dynamic iconInfo;
+
+static char* const ASSOCIATION_ICON_INFO = "ASSOCIATION_ICON_INFO";
+
+- (void)setIconInfo:(TQEasyIconInfo *)iconInfo
+{
+    objc_setAssociatedObject(self,ASSOCIATION_ICON_INFO,iconInfo,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (TQEasyIconInfo *)iconInfo
+{
+    id obj = objc_getAssociatedObject(self,ASSOCIATION_ICON_INFO);
+    
+    if (obj == nil)
+    {
+        obj = [[TQEasyIconInfo alloc] initWithSpacing:0 iconDirection:0];
+    }
+    
+    return obj;
+}
+
+#pragma mark - setIconIn L,R,T,B
 
 - (void)setIconInLeft
 {
@@ -30,21 +70,27 @@
     [self setIconInBottomWithSpacing:0];
 }
 
+#pragma mark - setIconIn L,R,T,B With Spacing
+
 - (void)setIconInLeftWithSpacing:(CGFloat)Spacing
 {
     self.titleEdgeInsets = (UIEdgeInsets){
         .top    = 0,
-        .left   = 0,
+        .left   =   (Spacing / 2),
         .bottom = 0,
-        .right  = 0,
+        .right  = - (Spacing / 2),
     };
     
     self.imageEdgeInsets = (UIEdgeInsets){
         .top    = 0,
-        .left   = 0,
+        .left   = - (Spacing / 2),
         .bottom = 0,
-        .right  = 0,
+        .right  =   (Spacing / 2),
     };
+    
+    TQEasyIconInfo *iconInfo = [[TQEasyIconInfo alloc] initWithSpacing:Spacing iconDirection:TQEasyIconInLeft];
+    
+    [self setIconInfo:iconInfo];
 }
 
 - (void)setIconInRightWithSpacing:(CGFloat)Spacing
@@ -65,6 +111,10 @@
         .bottom = 0,
         .right  = - (tit_W + Spacing / 2),
     };
+    
+    TQEasyIconInfo *iconInfo = [[TQEasyIconInfo alloc] initWithSpacing:Spacing iconDirection:TQEasyIconInRight];
+    
+    [self setIconInfo:iconInfo];
 }
 
 - (void)setIconInTopWithSpacing:(CGFloat)Spacing
@@ -87,6 +137,10 @@
         .bottom =   (img_H / 2 + Spacing / 2),
         .right  = - (tit_W / 2),
     };
+    
+    TQEasyIconInfo *iconInfo = [[TQEasyIconInfo alloc] initWithSpacing:Spacing iconDirection:TQEasyIconInTop];
+    
+    [self setIconInfo:iconInfo];
 }
 
 - (void)setIconInBottomWithSpacing:(CGFloat)Spacing
@@ -109,6 +163,10 @@
         .bottom = - (img_H / 2 + Spacing / 2),
         .right  = - (tit_W / 2),
     };
+    
+    TQEasyIconInfo *iconInfo = [[TQEasyIconInfo alloc] initWithSpacing:Spacing iconDirection:TQEasyIconInBottom];
+    
+    [self setIconInfo:iconInfo];
 }
 
 @end
