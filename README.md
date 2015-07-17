@@ -54,9 +54,9 @@ TQEasyIconButton is a UIButton Category. Easy way to set `titleEdgeInsets`,`imag
 
 	```objective-c
 	
-	[self.demoButton setIconInBottom];
+	[self.demoButton setIconInTop];
 	// or
-	//[self.demoButton setIconInBottomWithSpacing:0];
+	//[self.demoButton setIconInTopWithSpacing:0];
 
 	```
 
