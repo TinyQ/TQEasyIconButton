@@ -6,6 +6,11 @@ TQEasyIconButton is a UIButton Category. Easy way to set `titleEdgeInsets`,`imag
 
 ![image](img/demo.gif)
 
+##CocoaPods
+Add pod "TQEasyIconButton" to your Podfile.
+Run pod install or pod update.
+Import <UIButton+TQEasyIcon.h>.
+
 ##Usage
 
 1. Set icon & title for button.
@@ -63,3 +68,5 @@ TQEasyIconButton is a UIButton Category. Easy way to set `titleEdgeInsets`,`imag
 
 
   
+
+
