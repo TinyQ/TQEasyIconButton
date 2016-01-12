@@ -10,8 +10,6 @@ Pod::Spec.new do |s|
   s.author       = { "qfu" => "tinyqf@gmail.com" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/TinyQ/TQEasyIconButton.git", :tag => "0.0.1" }
-  s.subspec 'UIButton+TQEasyIcon' do |ss|
-    ss.source_files = "TQEasyIconButton/UIButton+TQEasyIcon/**/*.{h,m}"
-  end
+  s.source_files = "TQEasyIconButton/UIButton+TQEasyIcon/**/*.{h,m}"
   s.requires_arc = true
 end
