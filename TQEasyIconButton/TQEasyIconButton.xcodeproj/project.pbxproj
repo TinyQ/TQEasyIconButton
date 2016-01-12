@@ -14,7 +14,6 @@
 		E009BC3A1B289D3C00457642 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E009BC391B289D3C00457642 /* Images.xcassets */; };
 		E009BC3D1B289D3C00457642 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E009BC3B1B289D3C00457642 /* LaunchScreen.xib */; };
 		E009BC491B289D3C00457642 /* TQEasyIconButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E009BC481B289D3C00457642 /* TQEasyIconButtonTests.m */; };
-		E009BC551B289D9A00457642 /* UIButton+TQEasyIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = E009BC541B289D9A00457642 /* UIButton+TQEasyIcon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +40,6 @@
 		E009BC421B289D3C00457642 /* TQEasyIconButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TQEasyIconButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E009BC471B289D3C00457642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E009BC481B289D3C00457642 /* TQEasyIconButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TQEasyIconButtonTests.m; sourceTree = "<group>"; };
-		E009BC531B289D9A00457642 /* UIButton+TQEasyIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TQEasyIcon.h"; sourceTree = "<group>"; };
-		E009BC541B289D9A00457642 /* UIButton+TQEasyIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TQEasyIcon.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +63,6 @@
 		E009BC201B289D3C00457642 = {
 			isa = PBXGroup;
 			children = (
-				E009BC521B289D9A00457642 /* UIButton+TQEasyIcon */,
 				E009BC2B1B289D3C00457642 /* TQEasyIconButton */,
 				E009BC451B289D3C00457642 /* TQEasyIconButtonTests */,
 				E009BC2A1B289D3C00457642 /* Products */,
@@ -121,15 +117,6 @@
 				E009BC471B289D3C00457642 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E009BC521B289D9A00457642 /* UIButton+TQEasyIcon */ = {
-			isa = PBXGroup;
-			children = (
-				E009BC531B289D9A00457642 /* UIButton+TQEasyIcon.h */,
-				E009BC541B289D9A00457642 /* UIButton+TQEasyIcon.m */,
-			);
-			path = "UIButton+TQEasyIcon";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +220,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E009BC351B289D3C00457642 /* ViewController.m in Sources */,
-				E009BC551B289D9A00457642 /* UIButton+TQEasyIcon.m in Sources */,
 				E009BC321B289D3C00457642 /* AppDelegate.m in Sources */,
 				E009BC2F1B289D3C00457642 /* main.m in Sources */,
 			);

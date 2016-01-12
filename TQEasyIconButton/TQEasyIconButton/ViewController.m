@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIButton+TQEasyIcon.h"
+#import "../../UIButton+TQEasyIcon/UIButton+TQEasyIcon.h"
 
 @interface ViewController ()
 
