@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = { :git => "https://github.com/TinyQ/TQEasyIconButton.git", :tag => "0.0.1"}
   s.source_files = "UIButton+TQEasyIcon/*.{h,m}"
-  s.public_header_files = 'YYCache/*.{h}'
+  s.public_header_files = 'UIButton+TQEasyIcon/*.{h}'
   s.requires_arc = true
   s.frameworks = 'UIKit'
 end
