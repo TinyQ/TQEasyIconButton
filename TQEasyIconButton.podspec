@@ -6,10 +6,12 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    DESC
   s.homepage     = "https://github.com/TinyQ/TQEasyIconButton"
-  s.license      = "MIT"
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "qfu" => "tinyqf@gmail.com" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/TinyQ/TQEasyIconButton.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/TinyQ/TQEasyIconButton.git", :tag => "0.0.1"}
   s.source_files = "UIButton+TQEasyIcon/*.{h,m}"
+  s.public_header_files = 'YYCache/*.{h}'
   s.requires_arc = true
+  s.frameworks = 'UIKit'
 end
