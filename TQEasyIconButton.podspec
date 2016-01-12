@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "qfu" => "tinyqf@gmail.com" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/TinyQ/TQEasyIconButton.git", :tag => "0.0.1"}
+  s.source       = { :git => "https://github.com/TinyQ/TQEasyIconButton.git", :tag => s.version.to_s}
   s.source_files = "UIButton+TQEasyIcon/*.{h,m}"
   s.public_header_files = 'UIButton+TQEasyIcon/*.{h}'
   s.requires_arc = true
