@@ -2,7 +2,7 @@
 
 TQEasyIconButton is a UIButton Category. Easy way to set `titleEdgeInsets`,`imageEdgeInsets` make icon in left,right,top,bottom.
 
-##Demo
+## Demo
 
 ![image](img/demo.gif)
 
@@ -16,7 +16,7 @@ pod "TQEasyIconButton"
 ```
 
 
-##Usage
+## Usage
 
 1. Set icon & title for button.
 
